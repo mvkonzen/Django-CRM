@@ -2,6 +2,22 @@
 
 {% block content %}
 
-<h1>Register<h1>
+<div class="col-md-6 offset-md-3">
+<h1>Cadastro de Usuário<h1>
+<br/>
+
+<form method="POST" ACTION="">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <form>
+        <br/>
+        <button type="submit" class="btn btn-secondary">Cadastrar</button>
+    </form>
+
+
+
+
 
 {% endblock %}
